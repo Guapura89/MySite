@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Paranormal sites</title>
+    <link rel="stylesheet" href="css/style4.css" />
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="container-nav">
+        <ul>
+            <img src="img/fantasma.png" />
+            <li class="li-nav"></li><a href="Aboutdeveloper.html">About developer</a></li>
+            <li class="li-nav"></li><a id="active" href="Paranormalsites.html">Paranormal sites</a></li>
+            <li class="li-nav"></li><a href="Music.html">Music</a></li>
+            <li class="li-nav"></li><a href="Videogames.html">Videogames</a></li>
+            <li class="li-nav"></li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <!--/Navbar-->
+    <div class="container-welcome">
+        <p>This is a section with some stories of terrifying places in diferent points of the world. Stories have been
+            told that paranormal things happen in these places, like screaming or things like that, since they are
+            frequently visited by travelers.
+        </p>
+    </div>
+
+    <div class="container-accordion">
+        <input type="button" class="accordion" value="Island of the dolls in Mexico" />
+        <div class="panel">
+            <p>One of the most terrifying places is in our country and it is the Island of the dolls. This island gives
+                even the bravest in the world goose bumps. If you dare to visit it, more than 1000 dolls hanging from
+                trees will observe you during the tour.
+
+                It is a heartbreaking and terrifying panorama in equal measure. Legend has it that shortly after a girl
+                drowned in the channels of Xochimilco, Don Julián Santana Barrera -the manager of the island- found a
+                doll floating in the water. As a show of respect and to calm the spirit of the drowned woman, he decided
+                to hang her from a tree. Since then and for 50 years he has been hanging dolls around the island; until
+                he himself drowned in the same place where the girl died ... creepy!</p>
+            <img src="img/islamunecas.jpg">
+        </div>
+
+        <input type="button" class="accordion" value="Actun Tunichil Muknal Cave in Belice" />
+        <div class="panel">
+            <p>A scary place is to enter a dark cave. In the case of the Actun Tunichil Muknal cave, in the Cayo
+                district, the visit is even more terrifying, since you have to swim first to get to the chilling part. A
+                few meters away, you find human skeletons scattered on the ground that are believed to have been
+                sacrifices made by the Mayans to honor the gods of the underworld.
+
+                The best known human remains in the cave are those of the "Crystal Maiden", a young adolescent who lies
+                face up on the ground and her calcified bones glow with intensity from the calcite that covers them.</p>
+            <img src="img/cave.jpg">
+        </div>
+
+        <input type="button" class="accordion" value="The Chauchilla Cemetery in Peru " />
+        <div class="panel">
+            <p>The necropolises of the world are terrifying and are always strewn with gloomy legends. One of the most
+                terrifying places in the world is the Chauchilla cemetery.
+
+                It is a desert area in the department of Ica in Peru, the visit becomes even more sinister not only
+                because the grave robbers have scattered part of the human remains throughout the area, but because many
+                tombs have been left open and the Pre-Inca skeletons watch you from their places for eternal rest, in a
+                fetal position and wrapped in their mortuary cloth.</p>
+            <img src="img/cementery.jpg">
+        </div>
+
+        <input type="button" class="accordion" value="Humberstone ghost town in Chile " />
+        <div class="panel">
+            <p>The inhospitable area of Atacama housed for many years a small population around a nitrate mine in which
+                men, women and children were exploited to death during extraction.
+
+                Today, decaying and wrapped in stories of paranormal events, Humberstone is a ghost town - declared a
+                World Heritage Site - that very few dare to visit. If you walk through its streets you will be able to
+                see the decline of a town that at the end of the 19th century boasted wealth and life. Some emblematic
+                buildings such as the theater, the church or the hotel are still standing. But you have to be careful,
+                they say that you hear noises and you can feel the presence of the miners who died for that "white
+                gold". Without a doubt it is a spooky scene, only for horror lovers, it is considered one of the most
+                terrifying places in the world. .</p>
+            <img src="img/ghosttown.jpg">
+        </div>
+
+        <input type="button" class="accordion" value="The Vienna Hotel in Argentina" />
+        <div class="panel">
+            <p>The most terrifying places in the world are in mysteriously strategic corners of the world. The Gran
+                Hotel Viena is wrapped in ghost stories and fables, this hotel near Mar Chiquita in the province of
+                Córdoba is considered one of the places with the most paranormal activity in all of Latin America.
+
+                It was built in the forties as a luxury hotel, it is believed that it was even a refuge for the Nazis
+                and Adolf Hitler himself. Today it is a museum and many visitors claim to have seen apparitions such as
+                that of the former head of security, women standing by room windows or girls running through the
+                corridors.</p>
+            <img src="img/viena-hotel.jpg">
+        </div>
+
+        <input type="button" class="accordion" value="The ruins of Villa Epecuén in Argentina" />
+        <div class="panel">
+            <p>On the shores of the Epecuén lagoon, in the province of Buenos Aires, this luxury tourist village was
+                created in the mid-20th century. But in 1986 the entire town was covered by water after a strong flood
+                that broke the embankment ... and it was like that for two decades!
+
+                All kinds of superstitions were created around this submerged town, until one day the water evaporated
+                completely, bringing to light its former splendor, now turned into a gloomy and gloomy panorama. Of its
+                streets and buildings now only dark traces of a luxurious past remain. Many visitors have heard screams.
+            </p>
+            <img src="img/epecuen.jpg">
+        </div>
+    </div>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                }
+                else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Videogames.html">Videogames</a></li>
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="Paranormalsites.html">Paranormal sites</a></li>
+                <li><a href="Aboutdeveloper.html">About developer</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><img src="img/facebook.png"></li>
+                <li><img src="img/twitter.png"></li>
+                <li><img src="img/instagram.png"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
